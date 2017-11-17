@@ -2,7 +2,7 @@
 .container {
 	height: 100vh;
 	width: 100vw;
-	margin: 0px;
+	margin: 0px
 }
 
 .top{
@@ -22,6 +22,14 @@
 .box{
 	height: 100%;
 	width: 25%;
+	display: flex;
+	align-items: bottom;
+	justify-content: center;
+}
+
+p{ 
+	font-size: 30px;
+	font-color: yellow
 }
 
 .hover:hover {
@@ -33,9 +41,10 @@
 	-moz-transform: scale(1.01);
 	transition: all 200ms ease-in;
 	transform: scale(1.01);
+	overflow: visible;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
 	
 	.container {
 		height: 100vh;
@@ -62,7 +71,7 @@
 	}
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
 	
 	.container {
 		height: 100vh;
@@ -70,59 +79,64 @@
 	}
 
 	.top{
-		height: 100vh;
+		height: 200vh;
 		width: 100vw;
-		display: flex;
+		display: block;
 		flex-wrap: wrap;
 	}
 
 	.bottom{
-		height: 100vh;
+		height: 200vh;
 		width: 100vw;
-		display: flex;
+		display: block;
 		flex-wrap: wrap;
 	}
 
 	.box{
-		height: 100%;
+		height: 25%;
 		width: 100%;
 	}
 }
 
+.center-image {
+	max-height: 100%;
+}
+
 .ronaldo{
-	content:url(images/ronaldo.png);
 	background-color: #007277;
+	overflow: hidden;
 }
 
 .messi{
-	content:url(images/messi.png);
 	background-color: #4d0013;
+	overflow: hidden;
 }
 
 .zlatan{
-	content:url(images/zlatan.png);
 	background-color: #c0c0c0;
+	overflow: hidden;
 }
 
 .pogba{
-	content:url(images/pogba.png);
 	background-color: #CC0000;
+	overflow: hidden;
 }
 
 .dybala{
-	content:url(images/dybala.png);
 	background-color: black;
+	overflow: hidden;
 }
 
 .debruyne{
-	content:url(images/debruyne.png);
 	background-color:  #89cff0 ;
+	overflow: hidden;
 }
 .hazard{
-	content:url(images/hazard.png);
 	background-color: blue;
+	overflow: hidden;
 }
 .reus{
-	content:url(images/reus.png);
 	background-color: gold;
+	overflow: hidden;
 }
+
