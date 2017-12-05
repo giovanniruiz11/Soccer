@@ -27,11 +27,6 @@
 	justify-content: center;
 }
 
-p{ 
-	font-size: 30px;
-	font-color: yellow
-}
-
 .hover:hover {
 	box-shadow: 0px 0px 150px #000;
 	z-index: 2;
@@ -42,6 +37,11 @@ p{
 	transition: all 200ms ease-in;
 	transform: scale(1.01);
 	overflow: visible;
+	cursor: pointer;
+}
+
+.box:active {
+	transform: scale(0.99, 0.99);
 }
 
 @media screen and (max-width: 1100px){
